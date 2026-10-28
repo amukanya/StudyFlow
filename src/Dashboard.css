@@ -1,0 +1,448 @@
+
+.dashboard {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-header h1 {
+  color: #2563eb;
+  font-size: 30px;
+  margin: 0;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.dashboard-content h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.dashboard-subtitle {
+  color: #64748b;
+  margin-bottom: 32px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.dashboard-card h3 {
+  color: #2563eb;
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.dashboard-card p {
+  color: #64748b;
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .dashboard-header {
+    padding: 18px;
+  }
+
+  .dashboard-content {
+    padding: 24px 16px;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* My Courses */
+
+.courses-section h2 {
+  font-size: 24px;
+  color: #2563eb;
+  margin: 0 0 10px;
+}
+
+.courses-section > p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.course-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.course-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #1e293b;
+}
+
+.course-form input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.course-form button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.course-form button:hover {
+  background: #1d4ed8;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.course-item h3 {
+  color: #1e293b;
+  font-size: 17px;
+  margin: 0 0 6px;
+}
+
+.course-item p {
+  color: #64748b;
+  font-size: 14px;
+  margin: 0;
+}
+
+.course-item button {
+  padding: 8px 12px;
+  background: #fee2e2;
+  color: #b91c1c;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* Assignments Section */
+
+.assignments-section {
+  width: 100%;
+}
+
+.assignments-section h2 {
+  color: #2563eb;
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.assignments-section > p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.assignment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.assignment-form input,
+.assignment-form select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  background: white;
+  color: #1e293b;
+  box-sizing: border-box;
+}
+
+.assignment-form input:focus,
+.assignment-form select:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.assignment-form button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.assignment-form button:hover {
+  background: #1d4ed8;
+}
+
+.assignment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.assignment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.assignment-item h3 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.assignment-item p {
+  margin: 4px 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.assignment-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.assignment-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.assignment-actions button:last-child {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+
+/* Study Plan Section */
+
+.study-plan-section {
+  width: 100%;
+}
+
+.study-plan-section h2 {
+  color: #2563eb;
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.study-plan-section > p {
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+.study-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.study-form input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  background: white;
+  box-sizing: border-box;
+}
+
+.study-form input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.study-form button {
+  width: 100%;
+  padding: 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.study-form button:hover {
+  background: #1d4ed8;
+}
+
+.study-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.study-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.study-item h3 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.study-item p {
+  margin: 4px 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.study-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.study-actions button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  cursor: pointer;
+}
+
+.study-actions button:last-child {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.study-form select {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background-color: white;
+  color: #334155;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.study-form select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.progress-section h2 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.progress-section > p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.progress-summary {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.progress-summary p {
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.progress-summary h3 {
+  color: #0f172a;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #2563eb;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
